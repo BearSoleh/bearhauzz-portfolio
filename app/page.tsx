@@ -217,7 +217,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-[radial-gradient(circle_at_top_right,_rgba(198,169,107,0.12),_transparent_30%),linear-gradient(135deg,_#11131a_0%,_#0b0b0f_45%,_#0d1320_100%)] p-8 md:p-12">
             <div className="grid gap-10 md:grid-cols-[1.3fr_0.7fr] md:gap-12">
               <div className="flex flex-col justify-center">
-                <span className="mb-4 inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-full border border-[#C6A96B]/30 bg-[#C6A96B]/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#C6A96B]">
+                <span className="mb-4 inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-full border border-green-400/30 bg-green-400/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-green-400">
                   ● Open to Work from June 2026
                 </span>
 
