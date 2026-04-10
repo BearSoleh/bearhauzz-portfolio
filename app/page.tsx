@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import ResumeSection from "../components/ResumeSection";
 
 export default function Home() {
   return (
@@ -274,6 +275,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ResumeSection />
 
       <section
         id="contact"
