@@ -3,6 +3,7 @@
 import { useState } from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
+import Link from "next/link";
 
 const designs = [
   {
@@ -11,29 +12,29 @@ const designs = [
     image: "/designs/poster-1.png",
   },
   {
+    title: "Training Promotion Poster",
+    category: "Poster Design",
+    image: "/designs/poster-2.png",
+  },
+  {
+    title: "Training Promotion Poster",
+    category: "Poster Design",
+    image: "/designs/poster-3.png",
+  },
+  {
+    title: "Training Promotion Poster",
+    category: "Poster Design",
+    image: "/designs/poster-4.png",
+  },
+  {
     title: "Corporate Programme Brochure",
     category: "Brochure Design",
     image: "/designs/brochure-1.png",
   },
   {
-    title: "Event & Campaign Visual",
-    category: "Marketing Design",
-    image: "/designs/poster-2.png",
-  },
-  {
-    title: "Awareness Campaign Visual",
-    category: "Poster Design",
-    image: "/designs/poster-3.png",
-  },
-  {
     title: "Course Information Brochure",
     category: "Brochure Design",
     image: "/designs/brochure-2.png",
-  },
-  {
-    title: "Social Media Promotional Design",
-    category: "Creative Design",
-    image: "/designs/poster-4.png",
   },
 ];
 
@@ -45,13 +46,21 @@ export default function DesignsPage() {
       <NavBar />
 
       <section className="mx-auto max-w-7xl px-6 pt-40 pb-10">
-        <div>
-          <p className="mb-3 text-sm uppercase tracking-[0.25em] text-[#C6A96B]">
+        <div className="max-w-3xl">
+            <p className="mb-3 text-sm uppercase tracking-[0.25em] text-[#C6A96B]">
             Creative Works
-          </p>
-          <h1 className="text-3xl font-bold md:text-5xl">
+            </p>
+
+            <h1 className="mb-6 text-3xl font-bold md:text-5xl">
             Poster, brochure and design showcase.
-          </h1>
+            </h1>
+
+            <Link
+            href="/"
+            className="inline-flex items-center rounded-full bg-[#C6A96B] px-6 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-[#b89655] hover:shadow-md"
+            >
+            ← Back to Home
+            </Link>
         </div>
       </section>
 

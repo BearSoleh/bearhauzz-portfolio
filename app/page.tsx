@@ -290,69 +290,50 @@ export default function Home() {
         id="design-preview"
         className="mx-auto max-w-7xl px-6 pt-0 pb-20 text-[#111827]"
       >
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="mb-3 text-sm uppercase tracking-[0.25em] text-[#C6A96B]">
-              Creative Works
-            </p>
-            <h2 className="text-3xl font-bold md:text-5xl">
-              Selected poster and brochure designs.
-            </h2>
-          </div>
+        <div className="rounded-[32px] border border-gray-200 bg-white p-8 shadow-sm md:p-12">
+          <div className="grid items-center gap-10 md:grid-cols-[0.9fr_1.1fr]">
+            
+            {/* Left side */}
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-[320px] overflow-hidden rounded-[28px] border border-gray-200 bg-neutral-300 shadow-lg">
+                <img
+                  src="/designs/poster-1.png"
+                  alt="Design Preview"
+                  className="h-[360px] w-full object-cover object-top opacity-40 blur-[1.5px]"
+                />
 
-          <Link href="/designs" className="group inline-flex items-center px-14">
-            <span className="bg-[#C6A96B] px-8 py-4 text-base font-semibold text-white transition duration-300 group-hover:bg-[#b89655]">
-              View All Designs
-            </span>
-
-            <span className="h-0 w-0 border-t-[26px] border-b-[26px] border-l-[26px] border-t-transparent border-b-transparent border-l-[#C6A96B] transition duration-300 group-hover:translate-x-1 group-hover:border-l-[#b89655]"></span>
-          </Link>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <img
-              src="/designs/poster-1.png"
-              alt="Poster Design 1"
-              className="h-[320px] w-full object-cover"
-            />
-            <div className="p-5">
-              <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#C6A96B]">
-                Poster Design
-              </p>
-              <h3 className="text-xl font-semibold">
-                Training Promotion Poster
-              </h3>
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 p-6 text-center">
+                  <p className="text-2xl font-semibold leading-snug text-white">
+                    More than just visuals.
+                    <br />
+                    Explore the full creative showcase.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <img
-              src="/designs/brochure-1.png"
-              alt="Brochure Design 1"
-              className="h-[320px] w-full object-cover"
-            />
-            <div className="p-5">
-              <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#C6A96B]">
-                Brochure Design
+            {/* Right side */}
+            <div className="text-center md:text-left">
+              <p className="mb-3 text-sm uppercase tracking-[0.25em] text-[#C6A96B]">
+                Creative Works
               </p>
-              <h3 className="text-xl font-semibold">
-                Corporate Programme Brochure
-              </h3>
-            </div>
-          </div>
 
-          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <img
-              src="/designs/poster-2.png"
-              alt="Poster Design 2"
-              className="h-[320px] w-full object-cover"
-            />
-            <div className="p-5">
-              <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#C6A96B]">
-                Marketing Design
+              <h2 className="mb-4 text-4xl font-bold leading-tight text-[#14213D]">
+                Poster, brochure and promotional designs
+              </h2>
+
+              <p className="mb-8 max-w-xl text-lg leading-relaxed text-[#4B5563]">
+                A curated collection of posters, brochures and marketing visuals
+                created for programme promotions, campaigns and branded content.
+                View the full gallery to explore more of my creative design work.
               </p>
-              <h3 className="text-xl font-semibold">Event & Campaign Visual</h3>
+
+              <Link
+                href="/designs"
+                className="inline-flex items-center rounded-full bg-[#C6A96B] px-6 py-3 font-medium text-white transition duration-300 hover:bg-[#b89655] hover:shadow-md"
+              >
+                View Design Portfolio
+              </Link>
             </div>
           </div>
         </div>

@@ -38,12 +38,12 @@ export default function Navbar() {
         
         {/* LEFT MENU */}
         <div className="flex flex-1 items-center justify-end gap-8 text-[18px] tracking-wide text-gray-800">
-          <a href="#home" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
+          <a href="/#home" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
             Home
             <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
           </a>
 
-          <a href="#about" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
+          <a href="/#about" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
             About
             <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
           </a>
@@ -51,7 +51,7 @@ export default function Navbar() {
 
         {/* CENTER LOGO */}
         <div className="mx-6 flex shrink-0 justify-center">
-          <a href="#home">
+          <a href="/#home">
             <img
               src="/logo.png"
               alt="BearHauz Logo"
@@ -62,12 +62,12 @@ export default function Navbar() {
 
         {/* RIGHT MENU */}
         <div className="flex flex-1 items-center justify-start gap-8 text-[18px] tracking-wide text-gray-800">
-          <a href="#projects" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
+          <a href="/#projects" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
             Projects
             <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
           </a>
 
-          <a href="#contact" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
+          <a href="/#contact" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
             Contact
             <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
           </a>
