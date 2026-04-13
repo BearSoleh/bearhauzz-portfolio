@@ -2,8 +2,8 @@ import { FaDownload } from "react-icons/fa";
 
 export default function ResumeSection() {
   return (
-    <section className="px-6 py-20">
-      <div className="mx-auto max-w-7xl rounded-[32px] border border-gray-200 bg-white p-8 shadow-sm md:p-12">
+    <section className="mx-auto max-w-7xl px-6 pt-0 pb-20">
+      <div className="rounded-[32px] border border-gray-200 bg-white p-8 shadow-sm md:p-12">
         <div className="grid items-center gap-10 md:grid-cols-[0.9fr_1.1fr]">
           
           {/* Left side */}

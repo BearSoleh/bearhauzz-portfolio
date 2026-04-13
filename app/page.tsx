@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import ResumeSection from "../components/ResumeSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
 
       <section
         id="home"
-        className="mx-auto flex min-h-screen max-w-7xl items-center px-6 py-20 pt-25"
+        className="mx-auto flex min-h-screen max-w-7xl items-center px-6 pt-36 pb-20"
       >
         <div className="overflow-hidden rounded-[32px] border border-gray-200 bg-white p-8 shadow-sm md:p-12">
           <div className="grid w-full items-center gap-12 md:grid-cols-[1.3fr_0.7fr] md:gap-16">
@@ -28,8 +29,9 @@ export default function Home() {
               </h1>
 
               <p className="mb-8 text-lg text-justify leading-8 text-gray-600">
-                A Junior Front-End Developer with a Bachelor in Computer Science hons. Netcentric Computing, 
-                who enjoys turning ideas into clean, functional and user-friendly digital experiences.
+                A Junior Front-End Developer with a Bachelor in Computer Science
+                hons. Netcentric Computing, who enjoys turning ideas into clean,
+                functional and user-friendly digital experiences.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -62,7 +64,7 @@ export default function Home() {
 
       <section
         id="about"
-        className="mx-auto max-w-7xl px-6 py-16 text-[#111827]"
+        className="mx-auto max-w-7xl px-6 pt-0 pb-20 text-[#111827]"
       >
         <div className="overflow-hidden rounded-[32px] border border-gray-200 bg-white p-8 shadow-sm md:p-12">
           <div className="grid gap-12 md:grid-cols-2">
@@ -78,25 +80,30 @@ export default function Home() {
 
             <div>
               <p className="mb-6 text-lg text-justify leading-8 text-gray-600">
-                Built a strong technical foundation through a final year project, developing a 
-                full web application using Laravel and PHP with a focus on system functionality, 
-                database integration and clean application logic. This was followed by hands-on 
-                industry exposure as a Shopify Web Developer Intern, where an e-commerce platform 
-                was developed from the ground up  and that continues to be actively used today.
+                Built a strong technical foundation through a final year project,
+                developing a full web application using Laravel and PHP with a
+                focus on system functionality, database integration and clean
+                application logic. This was followed by hands-on industry
+                exposure as a Shopify Web Developer Intern, where an e-commerce
+                platform was developed from the ground up and that continues to
+                be actively used today.
               </p>
 
               <p className="mb-6 text-lg text-justify leading-8 text-gray-600">
-                Expanded into real-world business environments at Mega Jati Academy as a Program
-                Executive (Digital Media), combining creative and technical skills in designing 
-                digital assets, managing website content via Wix CMS and supporting mobile application 
-                maintenance using Flutter. Currently contributing at Construction Professionals Malaysia
-                as a Junior Front-End Developer, developing and maintaining responsive websites using 
-                WordPress (Breakdance), with a strong emphasis on performance, usability and seamless 
-                user experience. Continuously advancing expertise in Next.js, React and TypeScript to 
-                deliver scalable and high-performance digital solutions.
+                Expanded into real-world business environments at Mega Jati
+                Academy as a Program Executive (Digital Media), combining
+                creative and technical skills in designing digital assets,
+                managing website content via Wix CMS and supporting mobile
+                application maintenance using Flutter. Currently contributing at
+                Construction Professionals Malaysia as a Junior Front-End
+                Developer, developing and maintaining responsive websites using
+                WordPress (Breakdance), with a strong emphasis on performance,
+                usability and seamless user experience. Continuously advancing
+                expertise in Next.js, React and TypeScript to deliver scalable
+                and high-performance digital solutions.
               </p>
 
-              <p className="text-lg leading-8 text-gray-800 font-semibold italic">
+              <p className="text-lg font-semibold italic leading-8 text-gray-800">
                 — Building with purpose, growing with every line of code.
               </p>
             </div>
@@ -106,7 +113,7 @@ export default function Home() {
 
       <section
         id="projects"
-        className="mx-auto max-w-7xl px-6 py-16 text-[#111827]"
+        className="mx-auto max-w-7xl px-6 pt-0 pb-20 text-[#111827]"
       >
         <div className="mb-12">
           <h2 className="text-3xl font-bold md:text-5xl">
@@ -230,9 +237,9 @@ export default function Home() {
               Shopify e-Commerce Website Development
             </h3>
             <p className="mb-6 leading-7 text-gray-600">
-              Designed and developed e-commerce websites on Shopify, delivering UI 
-              enhancements, optimized content and ensuring platform performance 
-              through continuous maintenance and troubleshooting.
+              Designed and developed e-commerce websites on Shopify, delivering
+              UI enhancements, optimized content and ensuring platform
+              performance through continuous maintenance and troubleshooting.
             </p>
             <p className="mb-6 text-sm text-gray-500">
               Shopify · Troubleshooting · Content Updates · e-Commerce
@@ -241,6 +248,8 @@ export default function Home() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="https://myelala.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-[#C6A96B] px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:scale-105"
               >
                 Shopify Website
@@ -256,17 +265,18 @@ export default function Home() {
               Web Application Development
             </h3>
             <p className="mb-6 leading-7 text-gray-600">
-              Developed a full-stack web application using Laravel, focusing on robust 
-              system functionality, efficient database integration, and scalable 
-              application performance.
+              Developed a full-stack web application using Laravel, focusing on
+              robust system functionality, efficient database integration, and
+              scalable application performance.
             </p>
             <p className="mb-6 text-sm text-gray-500">
-              Laravel · PHP · MySQL · HTML5 · CSS3 · JavaScript · MVC Architecture · RESTful APIs
+              Laravel · PHP · MySQL · HTML5 · CSS3 · JavaScript · MVC
+              Architecture · RESTful APIs
             </p>
 
             <div className="flex flex-wrap gap-3">
               <a
-                href=""
+                href="#"
                 className="rounded-full bg-[#C6A96B] px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:scale-105"
               >
                 CampusSphere Website
@@ -276,11 +286,83 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        id="design-preview"
+        className="mx-auto max-w-7xl px-6 pt-0 pb-20 text-[#111827]"
+      >
+        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="mb-3 text-sm uppercase tracking-[0.25em] text-[#C6A96B]">
+              Creative Works
+            </p>
+            <h2 className="text-3xl font-bold md:text-5xl">
+              Selected poster and brochure designs.
+            </h2>
+          </div>
+
+          <Link href="/designs" className="group inline-flex items-center px-14">
+            <span className="bg-[#C6A96B] px-8 py-4 text-base font-semibold text-white transition duration-300 group-hover:bg-[#b89655]">
+              View All Designs
+            </span>
+
+            <span className="h-0 w-0 border-t-[26px] border-b-[26px] border-l-[26px] border-t-transparent border-b-transparent border-l-[#C6A96B] transition duration-300 group-hover:translate-x-1 group-hover:border-l-[#b89655]"></span>
+          </Link>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <img
+              src="/designs/poster-1.png"
+              alt="Poster Design 1"
+              className="h-[320px] w-full object-cover"
+            />
+            <div className="p-5">
+              <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#C6A96B]">
+                Poster Design
+              </p>
+              <h3 className="text-xl font-semibold">
+                Training Promotion Poster
+              </h3>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <img
+              src="/designs/brochure-1.png"
+              alt="Brochure Design 1"
+              className="h-[320px] w-full object-cover"
+            />
+            <div className="p-5">
+              <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#C6A96B]">
+                Brochure Design
+              </p>
+              <h3 className="text-xl font-semibold">
+                Corporate Programme Brochure
+              </h3>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <img
+              src="/designs/poster-2.png"
+              alt="Poster Design 2"
+              className="h-[320px] w-full object-cover"
+            />
+            <div className="p-5">
+              <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#C6A96B]">
+                Marketing Design
+              </p>
+              <h3 className="text-xl font-semibold">Event & Campaign Visual</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ResumeSection />
 
       <section
         id="contact"
-        className="mx-auto max-w-7xl px-6 py-16 text-[#111827]"
+        className="mx-auto max-w-7xl px-6 pt-0 pb-20 text-[#111827]"
       >
         <div className="overflow-hidden rounded-[32px] border border-gray-200 bg-white p-8 shadow-sm md:p-12">
           <div className="grid gap-10 md:grid-cols-[1.3fr_0.7fr] md:gap-12">
