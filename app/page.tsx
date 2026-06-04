@@ -29,8 +29,8 @@ export default function Home() {
               </h1>
 
               <p className="mb-8 text-lg text-justify leading-8 text-gray-600">
-                A Junior Front-End Developer with a Bachelor in Computer Science
-                hons. Netcentric Computing, who enjoys turning ideas into clean,
+                A Junior Web Developer with a Bachelor in Computer Science
+                hons. Netcentric Computing who enjoys turning ideas into clean,
                 functional and user-friendly digital experiences.
               </p>
 
@@ -95,8 +95,8 @@ export default function Home() {
                 creative and technical skills in designing digital assets,
                 managing website content via Wix CMS and supporting mobile
                 application maintenance using Flutter. Currently contributing at
-                Construction Professionals Malaysia as a Junior Front-End
-                Developer, developing and maintaining responsive websites using
+                Construction Professionals Malaysia as a Junior Web Developer,
+                developing and maintaining responsive websites using
                 WordPress (Breakdance), with a strong emphasis on performance,
                 usability and seamless user experience. Continuously advancing
                 expertise in Next.js, React and TypeScript to deliver scalable
