@@ -10,25 +10,27 @@ export default function Home() {
   return (
     <>
       <section id="home" className="container hero">
-        <span className="availability">
-          <span />
-          Open to opportunities · One month’s notice
-        </span>
-        <h1>Web Developer.</h1>
-        <p className="hero-intro">
-          Hi, I’m Afiq Haikal, a web developer based in Malaysia. I build and
-          improve e-commerce, corporate, and marketing websites with thoughtful
-          design and practical code.
-        </p>
-        <div className="button-row">
-          <Link href="#projects" className="button button-outline">
-            See my work
-          </Link>
-          <Link href="#contact" className="button button-dark">
-            Contact me <span aria-hidden="true">↗</span>
-          </Link>
+        <div className="hero-copy">
+          <span className="availability">
+            <span />
+            Open to opportunities · One month’s notice
+          </span>
+          <h1>Web Developer.</h1>
+          <p className="hero-intro">
+            Hi, I’m Afiq Haikal, a web developer based in Malaysia. I build and
+            improve e-commerce, corporate, and marketing websites with thoughtful
+            design and practical code.
+          </p>
+          <div className="button-row">
+            <Link href="#projects" className="button button-outline">
+              See my work
+            </Link>
+            <Link href="#contact" className="button button-dark">
+              Contact me <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
+          <TechnologyStrip />
         </div>
-        <TechnologyStrip />
         <div className="portrait-panel">
           <Image
             src="/Profile.png"
