@@ -1,3 +1,4 @@
+import { FiArrowUp } from "react-icons/fi";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
@@ -63,7 +64,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Afiq Haikal. All rights reserved.
           </span>
           <span>Built with Next.js & a little curiosity.</span>
-          <a href="#top">Back to top ↑</a>
+          <a href="#top">Back to top <FiArrowUp className="inline-icon" aria-hidden="true" focusable="false" /></a>
         </div>
       </div>
     </footer>

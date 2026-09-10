@@ -1359,3 +1359,15 @@ h4 {
     gap: 32px;
   }
 }
+/* SVG icons retain their shape and inherit the text colour on every device. */
+.inline-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+}
+.button .inline-icon {
+  width: 20px;
+  height: 20px;
+}

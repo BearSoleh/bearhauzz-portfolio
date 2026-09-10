@@ -1,4 +1,6 @@
 "use client";
+import { FiArrowUpRight, FiArrowLeft, FiArrowRight, FiX } from "react-icons/fi";
+
 import Image from "next/image";
 import { useRef, useState } from "react";
 const designs = [
@@ -66,7 +68,7 @@ export default function DesignGallery() {
                 />
               </div>
               <span className="design-open" aria-hidden="true">
-                ↗
+                <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
               </span>
             </button>
             <div className="design-copy">
@@ -89,7 +91,7 @@ export default function DesignGallery() {
           <div className="dialog-bar">
             <h2 id="design-title">{designs[selected].title}</h2>
             <button autoFocus aria-label="Close image" onClick={close}>
-              ×
+              <FiX className="inline-icon" aria-hidden="true" focusable="false" />
             </button>
           </div>
           <div className="dialog-image">
@@ -107,7 +109,7 @@ export default function DesignGallery() {
               }
               aria-label="Previous design"
             >
-              ← Previous
+              <FiArrowLeft className="inline-icon" aria-hidden="true" focusable="false" /> Previous
             </button>
             <span>
               {selected + 1} / {designs.length}
@@ -116,7 +118,7 @@ export default function DesignGallery() {
               onClick={() => setSelected((selected + 1) % designs.length)}
               aria-label="Next design"
             >
-              Next →
+              Next <FiArrowRight className="inline-icon" aria-hidden="true" focusable="false" />
             </button>
           </div>
         </div>

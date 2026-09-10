@@ -1,3 +1,4 @@
+import { FiArrowLeft } from "react-icons/fi";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { projects } from "@/data/projects";
@@ -13,7 +14,7 @@ export default function Projects() {
     <>
       <section className="container page-intro">
         <Link href="/" className="text-link">
-          ← Back to home
+          <FiArrowLeft className="inline-icon" aria-hidden="true" focusable="false" /> Back to home
         </Link>
         <span className="eyebrow">Portfolio</span>
         <h1>Selected work.</h1>

@@ -1,3 +1,4 @@
+import { FiArrowUpRight, FiArrowLeft } from "react-icons/fi";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -29,7 +30,7 @@ export default async function ProjectPage({
     <>
       <section className="container page-intro">
         <Link href="/projects" className="text-link">
-          ← All projects
+          <FiArrowLeft className="inline-icon" aria-hidden="true" focusable="false" /> All projects
         </Link>
         <span className="eyebrow">{p.category}</span>
         <h1>{p.name}.</h1>
@@ -47,7 +48,7 @@ export default async function ProjectPage({
               rel="noopener noreferrer"
               className="button button-dark"
             >
-              {p.linkLabel} ↗
+              {p.linkLabel} <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
             </a>
           )}
         </div>
@@ -97,7 +98,7 @@ export default async function ProjectPage({
         <Link className="next-project" href={`/projects/${next.slug}`}>
           <span>Next project</span>
           <strong>{next.name}</strong>
-          <span aria-hidden="true">↗</span>
+          <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
         </Link>
       </section>
       <Contact />

@@ -1,3 +1,4 @@
+import { FiArrowLeft } from "react-icons/fi";
 import type { Metadata } from "next";
 import Link from "next/link";
 import DesignGallery from "@/components/DesignGallery";
@@ -12,7 +13,7 @@ export default function DesignsPage() {
     <>
       <section className="container page-intro">
         <Link href="/" className="text-link">
-          ← Back to home
+          <FiArrowLeft className="inline-icon" aria-hidden="true" focusable="false" /> Back to home
         </Link>
         <span className="eyebrow">Creative work</span>
         <h1>The visual side.</h1>

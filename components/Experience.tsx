@@ -1,3 +1,4 @@
+import { FiArrowDown } from "react-icons/fi";
 import ResumeSection from "./ResumeSection";
 const experience = [
   {
@@ -71,7 +72,7 @@ export default function Experience() {
                   <span className="experience-date">{job.date}</span>
                 </div>
                 <span className="expand-icon" aria-hidden="true">
-                  ↓
+                  <FiArrowDown className="inline-icon" aria-hidden="true" focusable="false" />
                 </span>
               </summary>
               <ul>

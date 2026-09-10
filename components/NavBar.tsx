@@ -1,4 +1,6 @@
 "use client";
+import { FiArrowUpRight } from "react-icons/fi";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -55,7 +57,7 @@ export default function NavBar() {
           ].map(([label, href]) => (
             <Link key={label} href={href} onClick={() => setOpen(false)}>
               {label}
-              <span aria-hidden="true">↗</span>
+              <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
             </Link>
           ))}
           <Link
@@ -63,7 +65,7 @@ export default function NavBar() {
             href="/#contact"
             onClick={() => setOpen(false)}
           >
-            Contact me <span aria-hidden="true">↗</span>
+            Contact me <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
           </Link>
         </div>
       </nav>

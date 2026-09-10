@@ -1,4 +1,6 @@
 "use client";
+import { FiPlay, FiPause } from "react-icons/fi";
+
 
 import { useState } from "react";
 import {
@@ -65,7 +67,7 @@ export function TechnologyStrip() {
         aria-pressed={paused}
         onClick={() => setPaused(!paused)}
       >
-        {paused ? "▶" : "Ⅱ"}
+        {paused ? (<FiPlay className="inline-icon" aria-hidden="true" focusable="false" />) : (<FiPause className="inline-icon" aria-hidden="true" focusable="false" />)}
       </button>
     </div>
   );

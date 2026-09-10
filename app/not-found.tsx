@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
 export default function NotFound() {
   return (
@@ -8,7 +9,7 @@ export default function NotFound() {
         This page may have moved. There’s plenty of work to explore back home.
       </p>
       <Link href="/" className="button button-dark">
-        Back to home ↗
+        Back to home <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
       </Link>
     </section>
   );

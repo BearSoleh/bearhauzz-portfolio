@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "@/data/projects";
@@ -74,7 +75,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               className="button button-dark"
             >
               {project.linkLabel}
-              <span aria-hidden="true">↗</span>
+              <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
             </a>
           )}
         </div>

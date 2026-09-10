@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import { FiDownload } from "react-icons/fi";
 export default function ResumeSection() {
   return (
@@ -15,7 +16,7 @@ export default function ResumeSection() {
         rel="noopener noreferrer"
         className="text-link"
       >
-        View résumé ↗
+        View résumé <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
       </a>
     </div>
   );
