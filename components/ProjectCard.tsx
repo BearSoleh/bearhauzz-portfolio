@@ -75,7 +75,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               className="button button-dark"
             >
               {project.linkLabel}
-              <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
+              <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
             </a>
           )}
         </div>

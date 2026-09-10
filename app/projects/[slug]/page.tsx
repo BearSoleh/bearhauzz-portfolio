@@ -98,7 +98,7 @@ export default async function ProjectPage({
         <Link className="next-project" href={`/projects/${next.slug}`}>
           <span>Next project</span>
           <strong>{next.name}</strong>
-          <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
+          <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
         </Link>
       </section>
       <Contact />

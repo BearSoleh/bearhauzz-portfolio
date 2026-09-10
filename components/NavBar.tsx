@@ -57,7 +57,7 @@ export default function NavBar() {
           ].map(([label, href]) => (
             <Link key={label} href={href} onClick={() => setOpen(false)}>
               {label}
-              <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
+              <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
             </Link>
           ))}
           <Link
@@ -65,7 +65,7 @@ export default function NavBar() {
             href="/#contact"
             onClick={() => setOpen(false)}
           >
-            Contact me <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
+            Contact me <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
           </Link>
         </div>
       </nav>

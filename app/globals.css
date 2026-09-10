@@ -159,7 +159,7 @@ h4 {
   min-width: 220px;
   justify-content: space-between;
 }
-.menu-links > a:not(.button) span {
+.menu-links > a:not(.button) .inline-icon {
   color: #999;
 }
 .menu-links > a:hover {
@@ -214,7 +214,7 @@ h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 12px;
   border-radius: 99px;
   padding: 12px 20px;
   font-size: 14px;
@@ -243,10 +243,7 @@ h4 {
 .button-outline:hover {
   background: #efefef;
 }
-.button span {
-  font-size: 21px;
-  line-height: 1;
-}
+
 .tech-marquee {
   overflow: hidden;
   margin-block: 38px;
@@ -1366,8 +1363,11 @@ h4 {
   height: 1em;
   flex-shrink: 0;
   vertical-align: -0.125em;
+  stroke-width: 2.25;
 }
-.button .inline-icon {
-  width: 20px;
-  height: 20px;
+.button > .inline-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  align-self: center;
 }

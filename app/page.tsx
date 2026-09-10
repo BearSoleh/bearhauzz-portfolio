@@ -27,7 +27,7 @@ export default function Home() {
               See my work
             </Link>
             <Link href="#contact" className="button button-dark">
-              Contact me <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
+              Contact me <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
             </Link>
           </div>
           <TechnologyStrip />
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
           <div className="section-action">
             <Link href="/projects" className="button button-outline">
-              Explore all projects <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
+              Explore all projects <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
             </Link>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function Home() {
               programmes and branded communications.
             </p>
             <Link href="/designs" className="button button-outline">
-              Explore creative work <span aria-hidden="true"><FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" /></span>
+              Explore creative work <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
             </Link>
           </div>
         </div>
