@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Afiq Haikal — Portfolio
 
-## Getting Started
+A light portfolio built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4. Layout and typography follow the Fastfolio reference, adapted to Afiq’s projects and experience.
 
-First, run the development server:
+## Development
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- `npm install` (only if dependencies are missing)
+- `npm run dev`
+- `npm run lint`
+- `npm run build`
+- `npm start` to serve the production build
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Updating content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `data/projects.ts`: project descriptions, status, screenshots, links, and case studies. The first seven projects appear on the homepage; all appear at /projects.
+- `components/Experience.tsx`: employment timeline.
+- `app/page.tsx`: introduction, about, and working approach.
+- `components/DesignGallery.tsx`: creative portfolio items.
+- `public/resume.pdf`: current downloadable résumé.
+- `app/globals.css`: shared styling and responsive breakpoints.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Project detail routes are generated from the shared project data. No public source-code links are assumed for client work. The Janine image is labelled as a Framer design preview; development and review statuses reflect the supplied September 2026 records.
 
-## Learn More
+## Images and typography
 
-To learn more about Next.js, take a look at the following resources:
+The seven recent project thumbnails are real screenshots of the supplied websites/previews, captured in September 2026. WebP copies reduce transfer size; original design PNGs are preserved. Inter and Manrope are self-hosted by next/font (network access is required for their first build download).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The gallery uses a native modal dialog with Escape handling and focus restoration. The technology animation can be paused and honours reduced-motion preferences. Navigation, project cards, experience entries, and gallery adapt to mobile screens.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This remains the existing Next.js project and can use its established Vercel deployment workflow. No production deployment is performed by the redesign itself.

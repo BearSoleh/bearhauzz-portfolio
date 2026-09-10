@@ -1,79 +1,72 @@
 "use client";
-
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-
-export default function Navbar() {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const lastScrollY = useRef(0);
-
+export default function NavBar() {
+  const [open, setOpen] = useState(false);
+  const button = useRef<HTMLButtonElement>(null);
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY < 80) {
-        setShowNavbar(true);
-      } else if (currentScrollY > lastScrollY.current) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
+    const close = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        button.current?.focus();
       }
-
-      lastScrollY.current = currentScrollY;
     };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    document.addEventListener("keydown", close);
+    return () => document.removeEventListener("keydown", close);
   }, []);
-
   return (
-    <nav
-      className={`fixed left-0 top-0 z-50 w-full border-b border-gray-200 bg-white/70 backdrop-blur-md transition-transform duration-300 ${
-        showNavbar ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
-      <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-5">
-        
-        {/* LEFT MENU */}
-        <div className="flex flex-1 items-center justify-end gap-8 text-[18px] tracking-wide text-gray-800">
-          <a href="/#home" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
-            Home
-            <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-
-          <a href="/#about" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
-            About
-            <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </div>
-
-        {/* CENTER LOGO */}
-        <div className="mx-6 flex shrink-0 justify-center">
-          <a href="/#home">
-            <img
-              src="/logo.png"
-              alt="BearHauz Logo"
-              className="h-20 cursor-pointer object-contain transition duration-300 hover:scale-105"
-            />
-          </a>
-        </div>
-
-        {/* RIGHT MENU */}
-        <div className="flex flex-1 items-center justify-start gap-8 text-[18px] tracking-wide text-gray-800">
-          <a href="/#projects" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
-            Projects
-            <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-
-          <a href="/#contact" className="group relative font-medium text-gray-800 transition duration-300 hover:text-black hover:font-semibold">
-            Contact
-            <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C6A96B] transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </div>
-
+    <header className="site-header">
+      <div className="container header-row">
+        <Link href="/" className="identity" onClick={() => setOpen(false)}>
+          <span className="avatar">
+            <Image src="/Profile.png" alt="" width={44} height={55} />
+          </span>
+          <span>
+            Afiq Haikal<span className="identity-note"> / BearHauzz</span>
+          </span>
+        </Link>
+        <button
+          ref={button}
+          className={`menu-toggle ${open ? "is-open" : ""}`}
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          aria-expanded={open}
+          aria-controls="main-menu"
+          onClick={() => setOpen(!open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
-    </nav>
+      <nav
+        id="main-menu"
+        className="menu-panel"
+        aria-label="Main navigation"
+        hidden={!open}
+      >
+        <div className="container menu-links">
+          {[
+            ["Skills", "/#skills"],
+            ["Projects", "/#projects"],
+            ["Experience", "/#experience"],
+            ["Creative work", "/designs"],
+            ["How I work", "/#approach"],
+          ].map(([label, href]) => (
+            <Link key={label} href={href} onClick={() => setOpen(false)}>
+              {label}
+              <span aria-hidden="true">↗</span>
+            </Link>
+          ))}
+          <Link
+            className="button button-dark"
+            href="/#contact"
+            onClick={() => setOpen(false)}
+          >
+            Contact me <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
+      </nav>
+    </header>
   );
 }
