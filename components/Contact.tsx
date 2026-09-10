@@ -6,11 +6,11 @@ export default function Contact() {
       <div className="container">
         <span className="eyebrow">Let’s connect</span>
         <h2>
-          Let’s build
+          Have a role
           <br />
-          something great.
+          in mind?
         </h2>
-        <p>Have a role or a project in mind? I’d love to hear about it.</p>
+        <p>I’m open to web development roles and project enquiries. Email me with the details, or get in touch on WhatsApp.</p>
         <a href="mailto:afiqztremo09@gmail.com" className="button button-dark">
           Get in touch <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
         </a>

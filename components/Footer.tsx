@@ -12,9 +12,9 @@ export default function Footer() {
               Afiq Haikal.
             </Link>
             <p>
-              Thoughtful websites.
+              Web developer in Petaling Jaya.
               <br />
-              Built for the people who use them.
+              Client websites, storefronts, and content systems.
             </p>
             <div className="social-links">
               <a
@@ -63,7 +63,7 @@ export default function Footer() {
           <span>
             © {new Date().getFullYear()} Afiq Haikal. All rights reserved.
           </span>
-          <span>Built with Next.js & a little curiosity.</span>
+          <span>Built with Next.js.</span>
           <a href="#top">Back to top <FiArrowUp className="inline-icon" aria-hidden="true" focusable="false" /></a>
         </div>
       </div>

@@ -26,7 +26,7 @@ export const projects: Project[] = [
     url: "https://www.vastiqsolutions.com/",
     linkLabel: "Live website",
     summary:
-      "From an inherited project to a launched corporate website. Responsive pages, clearer navigation, and a complete production handover.",
+      "I took over an unfinished corporate website, completed the remaining pages and client amendments, and launched it through cPanel within one month.",
     role: "Web development, client amendments & deployment",
     challenge:
       "Bring an inherited website through its remaining development, client review, and launch while maintaining consistency across a wide range of corporate content.",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     url: "https://www.borneoprogram.com/",
     linkLabel: "Live website",
     summary:
-      "A recruitment website that grew into a content-managed platform, connecting candidates with opportunities and giving administrators control of their content.",
+      "I built the recruitment website, then added a Laravel and MySQL admin system for updating job listings and candidate testimonials.",
     role: "Front-end development & Laravel CMS",
     challenge:
       "Move beyond manually maintained static pages so the team could update job listings and testimonials through an administration interface.",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     url: "https://blushing-lifecycle-383741.framer.app/",
     linkLabel: "Design preview",
     summary:
-      "A premium retail experience with thoughtful navigation, reusable product and collection templates, and a Framer-to-Shopify design migration.",
+      "I’m implementing a Framer design in Shopify, including product and collection templates, navigation, and service pages. The redesign is still in development.",
     role: "Shopify development & design migration",
     challenge:
       "Translate a changing design direction into an editable Shopify storefront while working alongside an existing live store.",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
       "Worked within an unpublished theme and investigated shared product and collection behaviour affecting the live store.",
     ],
     outcome:
-      "Substantial redesign work completed. The ten-page Framer-to-Shopify migration was still in progress at the last update; the linked Framer preview shows design work, not the published Shopify implementation.",
+      "The ten-page Framer-to-Shopify migration is in progress. The link shows the Framer design preview; the Shopify redesign has not been published.",
   },
   {
     slug: "pferd",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     stack: ["Shopify Liquid", "CSS", "JavaScript"],
     status: "In development",
     summary:
-      "An equestrian storefront with reusable pages, flexible theme-editor controls, and carefully prepared product imagery and brand content.",
+      "I’m developing Shopify pages and theme-editor controls for an equestrian brand, alongside product imagery and content updates. Mobile refinements are ongoing.",
     role: "Theme development, product content & visual preparation",
     challenge:
       "Turn the brand’s visual direction into a flexible storefront that a nontechnical team could maintain through the Shopify Theme Editor.",
@@ -116,17 +116,17 @@ export const projects: Project[] = [
     url: "https://rotating-decisions-826454.framer.app/",
     linkLabel: "View preview",
     summary:
-      "A travel website brought to life with fullscreen navigation, animated transitions, consistent page layouts, and clear enquiry journeys.",
+      "I built and refined Framer pages, fullscreen navigation, and animated transitions, then worked through client amendments to forms, footers, and mobile layouts.",
     role: "Page development & custom interactions",
     challenge:
-      "Create consistent, engaging interactions across a multi-page marketing website while accommodating client feedback across devices.",
+      "Build the requested pages and interactions, then apply client feedback across desktop and mobile layouts.",
     contributions: [
       "Built and refined About, Contact, What’s New, Partner Program, and MICE & Events pages.",
       "Implemented fullscreen navigation, curtain transitions, staggered text animation, and responsive menu details.",
       "Standardised footers and CTAs, and refined forms, FAQ accordions, imagery, spacing, and hover interactions.",
     ],
     outcome:
-      "The recorded amendment scope was completed. Production-domain launch has not been confirmed; the available link is a Framer preview.",
+      "I completed the requested amendments. The link is a Framer preview; a production-domain launch has not been confirmed.",
   },
   {
     slug: "upstairs",
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     stack: ["WordPress", "Elementor"],
     status: "Client review",
     summary:
-      "A corporate website for a stairlift and home-mobility provider, refined through typography, colour exploration, responsive layouts, and client feedback.",
+      "I implemented and refined Elementor pages for a stairlift provider, including typography, colour options, and mobile layouts for client review.",
     role: "WordPress implementation & design refinement",
     challenge:
       "Translate evolving visual preferences into consistent pages while managing repeated colour and layout reviews.",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     stack: ["Framer"],
     status: "Live",
     summary:
-      "Responsive refinements to the company website, with clearer content, better tablet and mobile layouts, and a direct WhatsApp enquiry route.",
+      "I updated the existing company website in Framer, corrected tablet and mobile layouts, refined homepage content, and added a WhatsApp contact button.",
     role: "Website refinement & responsive QA",
     challenge:
       "Improve an existing website’s presentation and enquiry access across desktop, tablet, and mobile.",
@@ -167,7 +167,7 @@ export const projects: Project[] = [
       "Added a floating WhatsApp button and improved content readability and consistency.",
     ],
     outcome:
-      "Refinements were made to the company website, reported as live. My contribution focused on improvements to the existing site.",
+      "My updates are on the live company website. My role covered improvements to the existing Framer site.",
     image: "/projects/goviral-lab.webp",
     url: "https://www.govirallab.com/",
     linkLabel: "Live website",

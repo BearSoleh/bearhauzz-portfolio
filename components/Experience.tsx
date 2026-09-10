@@ -51,8 +51,7 @@ export default function Experience() {
           <span className="eyebrow">Experience</span>
           <h2>Where I’ve worked.</h2>
           <p>
-            Hands-on development, thoughtful improvements, and real-world
-            delivery.
+            My roles in web development, digital media, and application support.
           </p>
         </div>
         <div className="experience-list">

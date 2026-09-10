@@ -79,7 +79,7 @@ export default function Skills() {
         <div className="section-heading">
           <span className="eyebrow">Tech stack</span>
           <h2>Tools I build with.</h2>
-          <p>From custom storefronts to websites your team can manage.</p>
+          <p>Platforms and languages I’ve used in client work, previous roles, and academic projects.</p>
         </div>
         <div className="skill-list">
           {skills.map(({ name, Icon, color }) => (

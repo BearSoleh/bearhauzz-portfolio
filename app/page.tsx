@@ -18,9 +18,7 @@ export default function Home() {
           </span>
           <h1>Web Developer.</h1>
           <p className="hero-intro">
-            Hi, I’m Afiq Haikal, a web developer based in Malaysia. I build and
-            improve e-commerce, corporate, and marketing websites with thoughtful
-            design and practical code.
+            Hi, I’m Afiq Haikal, a web developer in Malaysia. At GoViral Digital, I build and update client websites using Shopify, Framer, WordPress, and Laravel.
           </p>
           <div className="button-row">
             <Link href="#projects" className="button button-outline">
@@ -59,8 +57,7 @@ export default function Home() {
               <span className="eyebrow">Projects</span>
               <h2>Selected work.</h2>
               <p>
-                Seven recent projects. Different platforms. The same attention
-                to detail.
+                Seven websites I’ve worked on at GoViral Digital, with details of my contribution to each.
               </p>
             </div>
           </Reveal>
@@ -83,10 +80,9 @@ export default function Home() {
         <div className="container">
           <div className="section-heading">
             <span className="eyebrow">How I work</span>
-            <h2>Care in every step.</h2>
+            <h2>From brief to handover.</h2>
             <p>
-              From understanding the brief to checking the details before
-              launch.
+              My day-to-day work includes development, client amendments, testing, and deployment.
             </p>
           </div>
           <div className="approach-grid">
@@ -94,22 +90,22 @@ export default function Home() {
               [
                 "01",
                 "Understand the brief",
-                "Turn client requirements and approved designs into a clear set of pages, features, and priorities.",
+                "I review the requested pages and features, check the existing website, and identify what still needs to be built.",
               ],
               [
                 "02",
-                "Build to be maintained",
-                "Create reusable sections and editable content so the website stays useful after handover.",
+                "Make content editable",
+                "I build reusable Shopify sections and Laravel admin tools so the team can update content without editing code.",
               ],
               [
                 "03",
-                "Refine the details",
-                "Work through feedback, responsive layouts, navigation, and content with care.",
+                "Work through feedback",
+                "I work through client amendments, from page layouts and navigation to product images, copy, and mobile spacing.",
               ],
               [
                 "04",
-                "Prepare for delivery",
-                "Check across devices, resolve outstanding issues, and manage staging and launch steps.",
+                "Check before launch",
+                "I check pages across screen sizes and resolve issues before deployment. For VASTIQ, I also handled backups and the cPanel launch.",
               ],
             ].map(([n, title, text]) => (
               <Reveal key={n}>
@@ -128,21 +124,16 @@ export default function Home() {
           <div>
             <span className="eyebrow">A little about me</span>
             <h2>
-              Curious by nature.
-              <br />A builder by practice.
+              Afiq Haikal.
+              <br />Also known as BearSoleh.
             </h2>
           </div>
           <div>
             <p>
-              I’m Afiq, also known as BearSoleh. My work brings together web
-              development, visual implementation, and the practical details that
-              keep a website running.
+              I’m based in Petaling Jaya and graduated in Netcentric Computing from UiTM Arau. My experience includes a Shopify internship, digital media work, and website and mobile app support.
             </p>
             <p>
-              At GoViral Digital, I work across client projects—from Shopify
-              storefronts and Framer websites to custom Laravel content systems.
-              I enjoy taking an idea, or an unfinished project, and helping it
-              become something people can use.
+              At GoViral Digital, I work on several websites at different stages. Some need new pages or an admin system; others need client amendments or unfinished development completed before launch.
             </p>
             <div className="education">
               <span className="eyebrow">Education</span>
@@ -171,13 +162,12 @@ export default function Home() {
           <div>
             <span className="eyebrow">Beyond development</span>
             <h2>
-              An eye for
+              Posters, brochures,
               <br />
-              the visual side.
+              and campaign work.
             </h2>
             <p>
-              Posters, brochures, and campaign assets created for training
-              programmes and branded communications.
+              Alongside development, I’ve designed promotional materials for training programmes, webinars, and corporate events.
             </p>
             <Link href="/designs" className="button button-outline">
               Explore creative work <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
