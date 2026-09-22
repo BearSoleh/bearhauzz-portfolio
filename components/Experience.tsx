@@ -8,6 +8,7 @@ const experience = [
     items: [
       "Develop and improve seven client and company websites across Shopify, Framer, WordPress, custom code, and Laravel.",
       "Build reusable sections, responsive layouts, product templates, and editable content systems.",
+      "Completed and deployed the Why Travel & Tours website using Framer within two months.",
       "Take ownership of inherited work, resolve client amendments, and coordinate concurrent projects through review and delivery.",
       "Handle cross-device QA, troubleshooting, staging workflows, and production deployment.",
     ],

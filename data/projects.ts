@@ -111,22 +111,23 @@ export const projects: Project[] = [
     name: "Why Travel & Tours",
     category: "Marketing website",
     stack: ["Framer", "React", "TypeScript"],
-    status: "Preview",
+    status: "Live",
     image: "/projects/why-travel.webp",
-    url: "https://rotating-decisions-826454.framer.app/",
-    linkLabel: "View preview",
+    url: "https://whytraveltour.com/",
+    linkLabel: "Live website",
     summary:
-      "I built and refined Framer pages, fullscreen navigation, and animated transitions, then worked through client amendments to forms, footers, and mobile layouts.",
-    role: "Page development & custom interactions",
+      "I completed and deployed the Why Travel & Tours website using Framer in two months, including responsive pages, fullscreen navigation, animated transitions, and client amendments.",
+    role: "Framer development, custom interactions & deployment",
     challenge:
       "Build the requested pages and interactions, then apply client feedback across desktop and mobile layouts.",
     contributions: [
       "Built and refined About, Contact, What’s New, Partner Program, and MICE & Events pages.",
       "Implemented fullscreen navigation, curtain transitions, staggered text animation, and responsive menu details.",
       "Standardised footers and CTAs, and refined forms, FAQ accordions, imagery, spacing, and hover interactions.",
+      "Completed development and deployed the Framer website to whytraveltour.com within two months.",
     ],
     outcome:
-      "I completed the requested amendments. The link is a Framer preview; a production-domain launch has not been confirmed.",
+      "Completed and deployed the website using Framer within two months. Why Travel & Tours is live at whytraveltour.com.",
   },
   {
     slug: "upstairs",
