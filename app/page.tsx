@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Skills, { TechnologyStrip } from "@/components/Skills";
 import ProjectCard from "@/components/ProjectCard";
-import { clientProjects } from "@/data/projects";
+import { featuredProjects } from "@/data/projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Reveal from "@/components/Reveal";
@@ -14,11 +14,14 @@ export default function Home() {
         <div className="hero-copy">
           <span className="availability">
             <span />
-            Open to opportunities · One month’s notice
+            Seeking my next development role
           </span>
           <h1>Web Developer.</h1>
           <p className="hero-intro">
-            Hi, I’m Afiq Haikal, a web developer in Malaysia. At GoViral Digital, I build and update client websites using Shopify, Framer, WordPress, and Laravel.
+            Hi, I’m Afiq Haikal, a web developer based in Petaling Jaya. I build and launch client websites, create custom Shopify storefronts and develop React interfaces and Laravel content systems.
+          </p>
+          <p className="hero-intro">
+            I’m seeking a Web Developer or Junior Software Developer/Engineer role where I can contribute my delivery experience, deepen my backend skills and grow into full-stack development.
           </p>
           <div className="button-row">
             <Link href="#projects" className="button button-outline">
@@ -40,12 +43,9 @@ export default function Home() {
             className="hero-portrait"
           />
           <span className="portrait-caption">
-            Based in Malaysia
+            Based in Petaling Jaya
             <br />
-            <strong>Building for the web.</strong>
-          </span>
-          <span className="portrait-index" aria-hidden="true">
-            AH / 2026
+            <strong>Exploring tech. Always learning.</strong>
           </span>
         </div>
       </section>
@@ -57,12 +57,12 @@ export default function Home() {
               <span className="eyebrow">Projects</span>
               <h2>Selected work.</h2>
               <p>
-                Seven websites I’ve worked on at GoViral Digital, with details of my contribution to each.
+                This portfolio and seven client and company websites from my GoViral Lab contract, with details of my contribution to each.
               </p>
             </div>
           </Reveal>
           <div className="project-grid">
-            {clientProjects.map((project) => (
+            {featuredProjects.map((project) => (
               <Reveal key={project.slug}>
                 <ProjectCard project={project} />
               </Reveal>
@@ -82,7 +82,7 @@ export default function Home() {
             <span className="eyebrow">How I work</span>
             <h2>From brief to handover.</h2>
             <p>
-              My day-to-day work includes development, client amendments, testing, and deployment.
+              My day-to-day work includes development, client amendments, testing and deployment.
             </p>
           </div>
           <div className="approach-grid">
@@ -90,22 +90,22 @@ export default function Home() {
               [
                 "01",
                 "Understand the brief",
-                "I review the requested pages and features, check the existing website, and identify what still needs to be built.",
+                "I review the requested pages and features, check the existing website and identify what still needs to be built.",
               ],
               [
                 "02",
                 "Make content editable",
-                "I build reusable Shopify sections and Laravel admin tools so the team can update content without editing code.",
+                "I code custom Shopify Liquid sections with theme-editor settings and build Laravel admin tools so teams can maintain their content.",
               ],
               [
                 "03",
-                "Work through feedback",
-                "I work through client amendments, from page layouts and navigation to product images, copy, and mobile spacing.",
+                "Develop and test locally",
+                "For Upstairs, I reproduced the WordPress site from its database and files in Docker with OrbStack, then used AI to help edit and test the code.",
               ],
               [
                 "04",
                 "Check before launch",
-                "I check pages across screen sizes and resolve issues before deployment. For VASTIQ, I also handled backups and the cPanel launch.",
+                "I work through client feedback and check responsive layouts before launch. My delivery work includes cPanel, Framer, Netlify and WordPress file and database transfers.",
               ],
             ].map(([n, title, text]) => (
               <Reveal key={n}>
@@ -130,15 +130,21 @@ export default function Home() {
           </div>
           <div>
             <p>
-              I’m based in Petaling Jaya and graduated in Netcentric Computing from UiTM Arau. My experience includes a Shopify internship, digital media work, and website and mobile app support.
+              I’m based in Petaling Jaya and graduated in Netcentric Computing from UiTM Arau. My experience includes a Shopify internship, digital media work and website and mobile app support.
             </p>
             <p>
-              At GoViral Digital, I work on several websites at different stages. Some need new pages or an admin system; others need client amendments or unfinished development completed before launch.
+              During my GoViral Lab contract, from June to 9 October 2026, I worked on seven client and company websites. I took over unfinished development, built custom storefront sections and an admin system, resolved client amendments and launched websites on their own domains.
             </p>
             <div className="education">
               <span className="eyebrow">Education</span>
               <strong>Bachelor of Computer Science (Hons.)</strong>
               <span>Netcentric Computing · UiTM Arau · 2021–2025</span>
+            </div>
+            <div className="education">
+              <span className="eyebrow">Leadership</span>
+              <span>Speaker of UiTM Arau Student Parliament</span>
+              <span>Student Council Secretariat of UiTM Arau</span>
+              <span>Head of Multimedia and Technical of UiTM Arau Student Orientation Committee</span>
             </div>
           </div>
         </div>
@@ -162,12 +168,12 @@ export default function Home() {
           <div>
             <span className="eyebrow">Beyond development</span>
             <h2>
-              Posters, brochures,
+              Posters, brochures
               <br />
               and campaign work.
             </h2>
             <p>
-              Alongside development, I’ve designed promotional materials for training programmes, webinars, and corporate events.
+              Alongside development, I’ve designed promotional materials for training programmes, webinars and corporate events.
             </p>
             <Link href="/designs" className="button button-outline">
               Explore creative work <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />

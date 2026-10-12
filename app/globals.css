@@ -92,7 +92,7 @@ h4 {
   letter-spacing: -0.04em;
 }
 .identity-note {
-  color: #888;
+  color: var(--muted);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
@@ -160,7 +160,7 @@ h4 {
   justify-content: space-between;
 }
 .menu-links > a:not(.button) .inline-icon {
-  color: #999;
+  color: var(--muted);
 }
 .menu-links > a:hover {
   color: #398465;
@@ -202,6 +202,9 @@ h4 {
   max-width: 730px;
   font-size: 17px;
   line-height: 1.65;
+}
+.hero-intro + .hero-intro {
+  margin-top: 14px;
 }
 .button-row {
   display: flex;
@@ -306,20 +309,12 @@ h4 {
   bottom: 30px;
   left: 30px;
   font-size: 13px;
-  color: #797d78;
+  color: #596057;
   line-height: 1.7;
 }
 .portrait-caption strong {
   color: #474d46;
   font-weight: 400;
-}
-.portrait-index {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  font-size: 12px;
-  letter-spacing: 0.13em;
-  color: #797d78;
 }
 .section {
   padding-block: 100px;
@@ -475,8 +470,7 @@ h4 {
     top: 20px;
     max-width: none;
   }
-  .portrait-caption,
-  .portrait-index {
+  .portrait-caption {
     display: none;
   }
   .section {
@@ -562,7 +556,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  color: #777;
+  color: var(--muted);
   font-size: 12px;
   margin-bottom: 18px;
   flex-wrap: wrap;
@@ -599,7 +593,7 @@ h4 {
   flex-wrap: wrap;
   gap: 8px;
   font-size: 12px;
-  color: #727272;
+  color: var(--muted);
   margin-top: auto;
 }
 .project-stack span:not(:last-child)::after {
@@ -689,11 +683,11 @@ h4 {
   letter-spacing: -0.035em;
 }
 .experience-item h3 > span {
-  color: #6b6b6b;
+  color: var(--muted);
 }
 .experience-date {
   font-size: 13px;
-  color: #777;
+  color: var(--muted);
   white-space: nowrap;
   padding-top: 5px;
 }
@@ -749,7 +743,7 @@ h4 {
   height: 100%;
 }
 .approach-number {
-  color: #8a8a8a;
+  color: var(--muted);
   font-size: 13px;
   display: block;
   margin-bottom: 28px;
@@ -857,7 +851,7 @@ h4 {
 }
 .contact-note {
   font-size: 12px;
-  color: #777;
+  color: var(--muted);
   margin-top: 28px;
 }
 .page-intro {
@@ -933,7 +927,7 @@ h4 {
 }
 .next-project > span:first-child {
   font-size: 13px;
-  color: #777;
+  color: var(--muted);
 }
 .next-project strong {
   font-size: 23px;
@@ -1340,15 +1334,13 @@ h4 {
     top: auto;
     bottom: 0;
   }
-  .hero .portrait-caption,
-  .hero .portrait-index {
+  .hero .portrait-caption {
     bottom: 20px;
     background: #f0f1efeb;
     padding: 6px 8px;
     border-radius: 6px;
   }
   .hero .portrait-caption { left: 16px; }
-  .hero .portrait-index { right: 16px; }
 }
 @media (max-width: 900px) {
   .hero {

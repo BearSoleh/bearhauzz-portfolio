@@ -6,7 +6,7 @@ import Contact from "@/components/Contact";
 export const metadata: Metadata = {
   title: "Creative Work",
   description:
-    "Posters, brochures, and promotional design work by Afiq Haikal.",
+    "Posters, brochures and promotional design work by Afiq Haikal.",
 };
 export default function DesignsPage() {
   return (
@@ -18,8 +18,8 @@ export default function DesignsPage() {
         <span className="eyebrow">Creative work</span>
         <h1>The visual side.</h1>
         <p>
-          Posters, brochures, and branded communications created for training
-          programmes, campaigns, and corporate events.
+          Posters, brochures and branded communications created for training
+          programmes, campaigns and corporate events.
         </p>
       </section>
       <section className="container projects-index">

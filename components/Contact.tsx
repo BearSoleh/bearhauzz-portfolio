@@ -10,7 +10,7 @@ export default function Contact() {
           <br />
           in mind?
         </h2>
-        <p>I’m open to web development roles and project enquiries. Email me with the details, or get in touch on WhatsApp.</p>
+        <p>I’m open to web development roles and project enquiries. Email me with the details or get in touch on WhatsApp.</p>
         <a href="mailto:afiqztremo09@gmail.com" className="button button-dark">
           Get in touch <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
         </a>
@@ -30,7 +30,7 @@ export default function Contact() {
           </Link>
         </div>
         <div className="contact-note">
-          Based in Petaling Jaya, Malaysia · Available with one month’s notice
+          Based in Petaling Jaya, Malaysia · Open to opportunities
         </div>
       </div>
     </section>

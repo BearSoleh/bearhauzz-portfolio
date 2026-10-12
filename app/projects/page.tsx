@@ -19,7 +19,7 @@ export default function Projects() {
         <span className="eyebrow">Portfolio</span>
         <h1>Selected work.</h1>
         <p>
-          Client projects, collaborative work, and things I’ve built along the
+          Client projects, collaborative work and things I’ve built along the
           way.
         </p>
       </section>

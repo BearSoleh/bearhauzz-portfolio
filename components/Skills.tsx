@@ -18,6 +18,7 @@ import {
   SiMysql,
   SiGit,
   SiPhp,
+  SiDocker,
 } from "react-icons/si";
 const skills = [
   { name: "Shopify", Icon: SiShopify, color: "#658d36" },
@@ -34,6 +35,7 @@ const skills = [
   { name: "PHP", Icon: SiPhp, color: "#6879ac" },
   { name: "MySQL", Icon: SiMysql, color: "#00758f" },
   { name: "Git", Icon: SiGit, color: "#e84d31" },
+  { name: "Docker", Icon: SiDocker, color: "#086dd7" },
 ];
 export function TechnologyStrip() {
   const [paused, setPaused] = useState(false);
@@ -79,7 +81,8 @@ export default function Skills() {
         <div className="section-heading">
           <span className="eyebrow">Tech stack</span>
           <h2>Tools I build with.</h2>
-          <p>Platforms and languages I’ve used in client work, previous roles, and academic projects.</p>
+          <p>Platforms and languages I’ve used in client work, previous roles and academic projects.</p>
+          <p>AI-assisted development: Codex and Claude for code editing, debugging and local testing.</p>
         </div>
         <div className="skill-list">
           {skills.map(({ name, Icon, color }) => (

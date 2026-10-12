@@ -14,7 +14,7 @@ export default function Footer() {
             <p>
               Web developer in Petaling Jaya.
               <br />
-              Client websites, storefronts, and content systems.
+              Client websites, storefronts and content systems.
             </p>
             <div className="social-links">
               <a

@@ -5,7 +5,7 @@ export default function ResumeSection() {
     <div className="resume-actions">
       <a
         href="/resume.pdf"
-        download="Afiq_Haikal_Web_Developer_Resume.pdf"
+        download="Afiq Haikal - Resume.pdf"
         className="button button-dark"
       >
         Download my résumé <FiDownload aria-hidden="true" />

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Afiq Haikal",
   },
   description:
-    "Web developer in Malaysia building Shopify storefronts, Framer and WordPress websites, and custom Laravel content systems. Explore selected work by Afiq Haikal.",
+    "Web developer in Malaysia building Shopify storefronts, Framer and WordPress websites and custom Laravel content systems. Explore selected work by Afiq Haikal.",
 };
 export default function RootLayout({
   children,

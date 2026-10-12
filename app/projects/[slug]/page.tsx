@@ -2,7 +2,7 @@ import { FiArrowUpRight, FiArrowLeft } from "react-icons/fi";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { projects } from "@/data/projects";
+import { projects, clientProjects } from "@/data/projects";
 import { ProjectVisual } from "@/components/ProjectCard";
 import Contact from "@/components/Contact";
 export function generateStaticParams() {
@@ -62,7 +62,7 @@ export default async function ProjectPage({
           </div>
           <div>
             <span className="eyebrow">Context</span>
-            <p>{p.agency || "Client / company work at GoViral Digital"}</p>
+            <p>{p.agency || "Client / company work during my GoViral Lab contract"}</p>
           </div>
           <div>
             <span className="eyebrow">Tools</span>
@@ -90,9 +90,11 @@ export default async function ProjectPage({
           </div>
           <div>
             <p>{p.outcome}</p>
-            <p className="status-note">
-              Project status recorded September 2026.
-            </p>
+            {clientProjects.some((project) => project.slug === p.slug) && (
+              <p className="status-note">
+                Work and project status recorded at the end of my GoViral Lab contract, 9 October 2026.
+              </p>
+            )}
           </div>
         </div>
         <Link className="next-project" href={`/projects/${next.slug}`}>
