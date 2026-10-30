@@ -37,6 +37,32 @@ const skills = [
   { name: "Git", Icon: SiGit, color: "#e84d31" },
   { name: "Docker", Icon: SiDocker, color: "#086dd7" },
 ];
+const skillGroups = [
+  {
+    title: "Programming",
+    description: "JavaScript, TypeScript, PHP, Python, HTML5, CSS3, SQL",
+  },
+  {
+    title: "Frontend",
+    description: "React, Next.js, Vite, Tailwind CSS, responsive web design",
+  },
+  {
+    title: "Backend & databases",
+    description: "Laravel, MySQL, PostgreSQL, Supabase, authentication, role-based access control",
+  },
+  {
+    title: "CMS, e-commerce & mobile",
+    description: "WordPress (Breakdance, Elementor), Shopify Liquid, Framer, Wix, Flutter",
+  },
+  {
+    title: "Tools & deployment",
+    description: "Git, GitHub, Docker, OrbStack, SSH, cPanel, phpMyAdmin, Cloudflare, Railway, Netlify, Vercel",
+  },
+  {
+    title: "Testing & delivery",
+    description: "Debugging, functional testing, cross-device testing, user acceptance testing and Vitest. Familiar with Agile and Scrum workflows.",
+  },
+];
 export function TechnologyStrip() {
   const [paused, setPaused] = useState(false);
   return (
@@ -82,16 +108,16 @@ export default function Skills() {
           <span className="eyebrow">Tech stack</span>
           <h2>Tools I build with.</h2>
           <p>Platforms and languages I’ve used in client work, previous roles and academic projects.</p>
-          <p>AI-assisted development: Codex and Claude for code editing, debugging and local testing.</p>
         </div>
-        <div className="skill-list">
-          {skills.map(({ name, Icon, color }) => (
-            <span className="skill-pill" key={name}>
-              <Icon style={{ color }} aria-hidden="true" />
-              {name}
-            </span>
+        <dl className="skill-groups">
+          {skillGroups.map(({ title, description }) => (
+            <div className="skill-group" key={title}>
+              <dt>{title}</dt>
+              <dd>{description}</dd>
+            </div>
           ))}
-        </div>
+        </dl>
+        <p className="skills-support">AI-assisted development: Codex and Claude for code editing, debugging and local testing.</p>
       </div>
     </section>
   );

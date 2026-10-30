@@ -3,7 +3,7 @@ import ResumeSection from "./ResumeSection";
 const experience = [
   {
     role: "Management Trainee · Web Development (Contract)",
-    company: "GoViral Lab",
+    company: "GoViral Digital Sdn Bhd",
     date: "June 2026 - Oct 2026",
     items: [
       "Developed and improved seven client and company websites across Shopify, Framer, WordPress, custom code and Laravel.",
@@ -14,31 +14,37 @@ const experience = [
       "Integrated Janine form submissions with a Railway-hosted service that sends email notifications.",
       "Set up Upstairs locally from its database and public_html files using Docker and OrbStack, used AI to help edit and test the website, then transferred files through SSH and imported the database through phpMyAdmin.",
       "Resolved client amendments and handled cross-device QA, troubleshooting, staging and deployment throughout the contract, which ended on 9 October 2026.",
+      "Coordinated concurrent digital projects with internal teams, clients and external vendors, tracking scope, timelines, deliverables and follow-up actions.",
+      "Supported Meta and TikTok advertising campaign setup, execution, performance monitoring and reporting with the marketing team.",
+      "Assisted with quotations, invoices, proposals and client onboarding documentation.",
     ],
   },
   {
     role: "Junior Web Developer",
-    company: "Construction Professionals Malaysia",
+    company: "Construction Professionals Malaysia Sdn Bhd",
     date: "Jan 2026 — May 2026",
     items: [
+      "Internally reassigned from Mega Jati Academy to support Construction Professionals Malaysia’s digital operations.",
       "Developed and maintained responsive WordPress websites using Breakdance, with UI, SEO and performance refinements.",
-      "Recovered compromised WordPress installations and strengthened website security.",
+      "Recovered WordPress websites affected by malware and phishing redirects and investigated inherited plugin, security-control and PHP runtime risks.",
       "Supported Flutter application improvements, functional testing and Android/iOS release work.",
+      "Designed promotional posters for training programmes and handled programme registration through HRD Corp (HRDC).",
     ],
   },
   {
     role: "Program Executive · Digital Media",
-    company: "Mega Jati Academy",
+    company: "Mega Jati Academy Sdn Bhd",
     date: "May 2025 — Jan 2026",
     items: [
       "Managed Wix website content and designed training, webinar and corporate promotional assets.",
       "Maintained Flutter application content and supported testing and troubleshooting.",
-      "Coordinated programme materials and participant communications.",
+      "Handled training programme registration through HRD Corp (HRDC) and CIDB, including supporting programme information and documentation.",
+      "Prepared registration materials and coordinated programme requirements and participant communications before transitioning internally to Construction Professionals Malaysia Sdn Bhd.",
     ],
   },
   {
     role: "Shopify Web Developer Intern",
-    company: "Homy Villa (Borneo)",
+    company: "Homy Villa (Borneo) Sdn Bhd",
     date: "Oct 2024 — Jan 2025",
     items: [
       "Customised Shopify Plus themes using Liquid, HTML, CSS and JavaScript.",

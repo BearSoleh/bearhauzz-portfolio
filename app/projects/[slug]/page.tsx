@@ -62,7 +62,7 @@ export default async function ProjectPage({
           </div>
           <div>
             <span className="eyebrow">Context</span>
-            <p>{p.agency || "Client / company work during my GoViral Lab contract"}</p>
+            <p>{p.agency || "Client / company work at GoViral Digital Sdn Bhd"}</p>
           </div>
           <div>
             <span className="eyebrow">Tools</span>
@@ -92,7 +92,7 @@ export default async function ProjectPage({
             <p>{p.outcome}</p>
             {clientProjects.some((project) => project.slug === p.slug) && (
               <p className="status-note">
-                Work and project status recorded at the end of my GoViral Lab contract, 9 October 2026.
+                Work and project status recorded at the end of my GoViral Digital contract, 9 October 2026.
               </p>
             )}
           </div>

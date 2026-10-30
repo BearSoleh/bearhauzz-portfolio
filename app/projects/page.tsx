@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 export const metadata: Metadata = {
   title: "Selected Projects",
   description:
-    "Explore Afiq Haikal’s web development projects, from Shopify storefronts to corporate websites and Laravel content systems.",
+    "Explore Afiq Haikal’s web applications, client websites and e-commerce projects, including BJBC, CampusSphere and Laravel content systems.",
 };
 export default function Projects() {
   return (
@@ -19,8 +19,7 @@ export default function Projects() {
         <span className="eyebrow">Portfolio</span>
         <h1>Selected work.</h1>
         <p>
-          Client projects, collaborative work and things I’ve built along the
-          way.
+          Web applications, client websites, e-commerce storefronts and academic projects, with details of my contribution to each.
         </p>
       </section>
       <section className="container projects-index">

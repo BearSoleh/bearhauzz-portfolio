@@ -14,14 +14,14 @@ export default function Home() {
         <div className="hero-copy">
           <span className="availability">
             <span />
-            Seeking my next development role
+            Open to Web Developer and Junior Software Developer/Engineer roles
           </span>
           <h1>Web Developer.</h1>
           <p className="hero-intro">
-            Hi, I’m Afiq Haikal, a web developer based in Petaling Jaya. I build and launch client websites, create custom Shopify storefronts and develop React interfaces and Laravel content systems.
+            Hi, I’m Afiq Haikal, a web developer and Computer Science graduate based in Petaling Jaya. I build web applications, business websites and e-commerce storefronts using React, Laravel, Shopify and WordPress.
           </p>
           <p className="hero-intro">
-            I’m seeking a Web Developer or Junior Software Developer/Engineer role where I can contribute my delivery experience, deepen my backend skills and grow into full-stack development.
+            My work covers frontend and backend development, deployment and troubleshooting. I’m currently developing a badminton club management application with React, TypeScript, Supabase and PostgreSQL and am open to Web Developer or Junior Software Developer/Engineer opportunities.
           </p>
           <div className="button-row">
             <Link href="#projects" className="button button-outline">
@@ -57,7 +57,7 @@ export default function Home() {
               <span className="eyebrow">Projects</span>
               <h2>Selected work.</h2>
               <p>
-                This portfolio and seven client and company websites from my GoViral Lab contract, with details of my contribution to each.
+                Selected web applications, client websites and e-commerce projects, covering authentication, database workflows, custom interfaces and deployment.
               </p>
             </div>
           </Reveal>
@@ -130,10 +130,10 @@ export default function Home() {
           </div>
           <div>
             <p>
-              I’m based in Petaling Jaya and graduated in Netcentric Computing from UiTM Arau. My experience includes a Shopify internship, digital media work and website and mobile app support.
+              I’m a Computer Science graduate in Netcentric Computing from UiTM Arau with experience across web applications, client websites and e-commerce storefronts. My work spans frontend and backend development, deployment, website recovery and collaboration with clients and cross-functional teams.
             </p>
             <p>
-              During my GoViral Lab contract, from June to 9 October 2026, I worked on seven client and company websites. I took over unfinished development, built custom storefront sections and an admin system, resolved client amendments and launched websites on their own domains.
+              Alongside my client work, I’m developing BJBC, a badminton club management application with authentication, session participation and database-backed waiting-list workflows. My final-year project, CampusSphere, was evaluated through user acceptance testing with 33 participants.
             </p>
             <div className="education">
               <span className="eyebrow">Education</span>

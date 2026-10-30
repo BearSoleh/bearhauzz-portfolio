@@ -175,6 +175,7 @@ h4 {
 }
 .availability {
   display: inline-flex;
+  max-width: 100%;
   align-items: center;
   gap: 10px;
   background: var(--soft);
@@ -345,27 +346,33 @@ h4 {
   color: var(--muted);
   font-size: 16px;
 }
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  max-width: 970px;
+.skill-groups {
+  max-width: 1040px;
   margin: auto;
 }
-.skill-pill {
-  display: inline-flex;
-  gap: 10px;
-  align-items: center;
-  background: white;
-  border: 1px solid #eaeaea;
-  border-radius: 99px;
-  padding: 12px 19px;
-  font-size: 15px;
+.skill-group {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 3fr;
+  gap: 28px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
 }
-.skill-pill svg {
-  width: 23px;
-  height: 23px;
+.skill-group:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.skill-group dt {
+  font-weight: 500;
+}
+.skill-group dd {
+  min-width: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.skills-support {
+  max-width: 1040px;
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-size: 14px;
 }
 .site-footer {
   border-top: 1px solid var(--line);
@@ -478,10 +485,6 @@ h4 {
   }
   .section-heading {
     margin-bottom: 32px;
-  }
-  .skill-pill {
-    padding: 10px 14px;
-    font-size: 14px;
   }
   .footer-top {
     gap: 28px;
@@ -610,6 +613,8 @@ h4 {
   margin-top: 24px;
 }
 .project-cover {
+  width: 100%;
+  min-width: 0;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -977,9 +982,14 @@ h4 {
   }
 }
 @media (max-width: 700px) {
+  .skill-group {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 20px 0;
+  }
   .project-grid,
   .approach-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
   }
   .project-copy {

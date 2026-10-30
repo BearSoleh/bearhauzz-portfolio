@@ -15,7 +15,29 @@ export type Project = {
   url?: string;
   linkLabel?: string;
 };
-export const projects: Project[] = [
+const projectEntries: Project[] = [
+  {
+    slug: "bjbc",
+    name: "BJBC",
+    category: "Club management application",
+    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "PostgreSQL"],
+    status: "In development",
+    summary:
+      "I’m developing a mobile-first badminton club management application with member/admin access, session participation and timed waiting-list workflows using React, TypeScript, Supabase and PostgreSQL.",
+    role: "Application development & testing",
+    challenge:
+      "Manage club membership, badminton sessions and participation with clear access controls and fair waiting-list workflows, while protecting member records and preventing overbooking.",
+    contributions: [
+      "Implemented authentication and member/admin access controls, session creation and publishing, participation voting and joining/withdrawal workflows.",
+      "Built waiting-list offers with 15-minute acceptance windows, automated expiry and queue promotion.",
+      "Added an in-app notification inbox for members.",
+      "Applied database access policies and transaction controls to protect member records and prevent overbooking.",
+      "Validated implemented workflows through automated database, integration and browser tests.",
+    ],
+    outcome:
+      "Core membership, session and waiting-list workflows have been implemented and tested. Development is ongoing.",
+    agency: "Independent project · Oct 2026 - Present",
+  },
   {
     slug: "bearhauzz",
     name: "BearHauzz Portfolio",
@@ -217,18 +239,20 @@ export const projects: Project[] = [
     url: "https://www.construction.org.my/",
     linkLabel: "Company website",
     summary:
-      "Responsive website development, content updates, troubleshooting and Flutter mobile application support.",
+      "Responsive WordPress development, website recovery and Flutter application support following an internal reassignment from Mega Jati Academy.",
     role: "Junior Web Developer",
     challenge:
-      "Maintain usable company websites and support mobile application updates across ongoing business requirements.",
+      "Support the revival of the company’s digital operations after an internal reassignment from Mega Jati Academy, including recovering affected websites and maintaining website and application content.",
     contributions: [
       "Built and maintained responsive WordPress pages using Breakdance.",
       "Implemented UI refinements, SEO fundamentals and performance improvements.",
+      "Recovered WordPress websites affected by malware and phishing redirects and investigated inherited plugin, security-control and PHP runtime risks.",
       "Supported Flutter application content, bug fixes, functional testing and releases.",
+      "Designed promotional posters for training programmes and handled programme registration through HRD Corp (HRDC).",
     ],
     outcome:
       "Delivered website and application improvements during my January–May 2026 role.",
-    agency: "Construction Professionals Malaysia",
+    agency: "Construction Professionals Malaysia Sdn Bhd",
   },
   {
     slug: "mega-jati",
@@ -247,10 +271,12 @@ export const projects: Project[] = [
       "Managed Wix website content for training programmes, webinars and corporate events.",
       "Designed digital promotional materials and supported programme communications.",
       "Maintained mobile application content and performed functional testing and troubleshooting.",
+      "Handled training programme registration through HRD Corp (HRDC) and CIDB, including supporting information and documentation.",
+      "Coordinated registration materials, programme requirements and participant communications before transitioning internally to Construction Professionals Malaysia Sdn Bhd.",
     ],
     outcome:
       "Supported the academy’s website and digital communications throughout my May 2025–January 2026 role.",
-    agency: "Mega Jati Academy",
+    agency: "Mega Jati Academy Sdn Bhd",
   },
   {
     slug: "myelala",
@@ -281,21 +307,38 @@ export const projects: Project[] = [
     stack: ["Laravel", "PHP", "MySQL"],
     status: "Academic project",
     summary:
-      "A role-based campus marketplace with product management, shopping carts, orders and administrative approval workflows.",
+      "A campus e-marketplace with separate buyer, seller and administrator workflows, product management, shopping carts and seller approval of payment receipts.",
     role: "Final-year project developer",
     challenge:
-      "Build a campus-focused marketplace with distinct buyer, seller and administrative workflows.",
+      "Build a campus-focused marketplace with distinct buyer, seller and administrator workflows and a clear process for submitting and approving payment receipts.",
     contributions: [
       "Implemented authentication, seller product management, categories, search and filtering.",
-      "Built shopping cart, order management, receipt uploads and administrative approval workflows.",
-      "Conducted user acceptance testing covering usability, navigation and usefulness.",
+      "Built shopping cart and order management with payment receipt submission and seller approval.",
+      "Evaluated the application through user acceptance testing with 33 participants.",
     ],
     outcome:
-      "Completed the final-year project for my Computer Science degree at UiTM Arau.",
+      "Developed a campus marketplace with buyer, seller and administrator workflows and evaluated the application through user acceptance testing with 33 participants.",
     agency: "Universiti Teknologi MARA",
   },
 ];
+const featuredSlugs = [
+  "bjbc",
+  "bearhauzz",
+  "campussphere",
+  "mypath",
+  "vastiq",
+  "goviral-lab",
+];
+
+export const featuredProjects = featuredSlugs.map((slug) => {
+  const project = projectEntries.find((entry) => entry.slug === slug);
+  if (!project) throw new Error(`Featured project not found: ${slug}`);
+  return project;
+});
+
+export const projects: Project[] = [
+  ...featuredProjects,
+  ...projectEntries.filter((project) => !featuredSlugs.includes(project.slug)),
+];
+
 export const clientProjects = projects.filter((project) => !project.agency);
-export const featuredProjects = projects.filter(
-  (project) => project.slug === "bearhauzz" || !project.agency,
-);

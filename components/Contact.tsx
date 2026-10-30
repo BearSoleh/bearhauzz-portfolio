@@ -10,7 +10,7 @@ export default function Contact() {
           <br />
           in mind?
         </h2>
-        <p>I’m open to web development roles and project enquiries. Email me with the details or get in touch on WhatsApp.</p>
+        <p>I’m open to Web Developer and Junior Software Developer/Engineer roles. Get in touch to discuss how I can contribute to your team.</p>
         <a href="mailto:afiqztremo09@gmail.com" className="button button-dark">
           Get in touch <FiArrowUpRight className="inline-icon" aria-hidden="true" focusable="false" />
         </a>

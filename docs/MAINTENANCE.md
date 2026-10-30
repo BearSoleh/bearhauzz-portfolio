@@ -1,6 +1,6 @@
 # Portfolio maintenance
 
-This guide describes the implementation reviewed at commit `406ef5fb56e7cd22291e3ea1095842d5834e4aae`. Return to the [portfolio README](../README.md).
+This guide includes the approved 30 October 2026 profile update. Return to the [portfolio README](../README.md).
 
 ## Project content and selection
 
@@ -19,14 +19,15 @@ Edit [data/projects.ts](../data/projects.ts). Each `Project` has these required 
 
 Optional fields are `agency`, `image`, `imageNote`, `url` and `linkLabel`. Provide `linkLabel` when supplying a `url` so the external-link button has meaningful text. Images use public asset paths such as `/projects/example.webp`.
 
-The two exports at the bottom control selection:
+The exports at the bottom control selection:
 
 - `clientProjects` includes entries with no `agency` value.
-- `featuredProjects` includes the `bearhauzz` entry plus entries with no `agency` value.
+- `featuredProjects` resolves the explicit `featuredSlugs` list in its declared order.
+- `projects` puts the featured entries first, then includes every remaining entry from `projectEntries`.
 
-Currently this produces **12** case studies and **8** homepage projects. Adding an `agency` label to an existing client entry will remove it from the homepage and from the group that receives the GoViral Lab contract-status note. Check both effects when editing context.
+Currently this produces **13** case studies and **6** homepage projects: BJBC, Portfolio, CampusSphere, MyPATH, Vastiq and GoViral Lab. Adding an `agency` label removes a project from the group that receives the contract-status note; homepage selection is independent. BJBC has an independent-project context, an In development status and no demo URL or screenshot supplied.
 
-Project-array order controls the index, filtered homepage order and circular “Next project” link. Choose unique slugs; known paths are generated from that same array. Page-specific titles and descriptions come from the selected entry.
+Featured-slug order controls the homepage and the start of the project index; remaining entries retain their source order. Exported project order also controls the circular “Next project” link. Choose unique slugs; known paths are generated from that same array. Page-specific titles and descriptions come from the selected entry.
 
 Keep contribution and publication status precise:
 
@@ -70,7 +71,7 @@ Use real captures when refreshing documentation. Update the date and alt text wh
 
 The website serves [public/resume.pdf](../public/resume.pdf). [ResumeSection.tsx](../components/ResumeSection.tsx) supplies download/view links; contact links also reference that path.
 
-The optional [Python script](../scripts/generate_resume.py) generates the two-page résumé. It requires Python and ReportLab, separately from the npm app:
+The current published PDF is the user-supplied resume from 30 October 2026. It is authoritative and is copied unchanged. The optional legacy [Python script](../scripts/generate_resume.py) generates an earlier resume draft and does not reproduce the current supplied PDF. It requires Python and ReportLab, separately from the npm app:
 
 ```bash
 python -m pip install reportlab

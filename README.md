@@ -9,12 +9,15 @@ Afiq Haikal's personal portfolio, built with Next.js App Router, React and TypeS
 ## Features
 
 - A homepage with skills, selected work, experience, working approach and contact links.
-- Twelve project case studies covering personal, academic, client and previous-role work; eight are featured on the homepage.
+- Thirteen project case studies covering independent applications, personal, academic, client and previous-role work; six are featured on the homepage.
+- Resume-aligned skill groups covering programming, frontend, backend, platforms, deployment and testing.
 - Project pages with contribution summaries, technology stacks, outcomes and page-specific metadata.
 - A six-item creative gallery with a native modal image viewer.
-- A downloadable résumé, email and WhatsApp contact links, and responsive navigation.
+- A downloadable résumé, email and WhatsApp contact links and responsive navigation.
 
 The seven GoViral Lab case studies record contributions and project status at the end of the contract on **9 October 2026**. Live sites, client review, unpublished themes and development previews retain distinct labels; the Janine thumbnail is a Framer design preview. Client source code is not included or assumed to be public.
+
+The homepage and project index lead with BJBC, BearHauzz Portfolio, CampusSphere, MyPATH, VASTIQ Solutions and GoViral Lab. BJBC is an independent application in development with no published demo URL or screenshot supplied. Its text cover uses the existing fallback. All other projects remain available on the project index.
 
 ## Tech stack
 
